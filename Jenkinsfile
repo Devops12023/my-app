@@ -9,9 +9,7 @@ pipeline {
      stage ("Run unit test cases") {
           steps {
             script{
-              sh """
-                cd my-app 
-                mvn test """
+              sh " mvn test "
             }
          }
      }
