@@ -10,7 +10,7 @@ pipeline {
           steps {
             script{
               sh """
-                cd myapp 
+                cd my-app 
                 mvn test """
             }
          }
