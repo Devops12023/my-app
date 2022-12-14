@@ -6,10 +6,13 @@ pipeline {
     maven 'maven'
    }
    stages {
-     stage ("Run unit test") {
+     stage ("Run unit test cases") {
        script {
-         sh " mvn test "
+         sh """
+         cd myapp 
+         mvn test """
        }
      }
+     stage
    }
 }
