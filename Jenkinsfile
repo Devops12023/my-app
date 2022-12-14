@@ -7,12 +7,14 @@ pipeline {
    }
    stages {
      stage ("Run unit test cases") {
-       script {
-         sh """
-         cd myapp 
-         mvn test """
-       }
+          steps {
+            script{
+              sh """
+                cd myapp 
+                mvn test """
+            }
+         }
      }
-     stage
+     
    }
 }
